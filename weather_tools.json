@@ -1,0 +1,21 @@
+[
+  {
+    "name": "get_weather",
+    "description": "查询指定城市的天气。示例: '北京天气' -> city='北京', unit='celsius'",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "city": {
+          "type": "string",
+          "description": "城市名称，如 '北京', '上海'。只提取城市名，忽略'天气''气温'等词。"
+        },
+        "unit": {
+          "type": "string",
+          "enum": ["celsius", "fahrenheit"],
+          "description": "温度单位。默认 celsius。除非用户明确说'华氏度'，否则始终为 celsius"
+        }
+      },
+      "required": ["city"]
+    }
+  }
+]

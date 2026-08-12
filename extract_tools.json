@@ -1,0 +1,13 @@
+[
+  {
+    "name": "extract_email",
+    "description": "Extract email addresses from text.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "text": {"type": "string"}
+      },
+      "required": ["text"]
+    }
+  }
+]

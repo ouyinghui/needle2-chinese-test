@@ -1,0 +1,14 @@
+# 二进制文件
+needle
+needle-x86_64
+*.bin
+
+# 测试草稿
+qemu-test-plan.md
+
+# 本地配置
+.env
+*.local
+# 未打磨文档
+needle2-chinese-test-report.md
+needle2-resources.md

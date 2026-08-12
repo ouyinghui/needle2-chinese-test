@@ -1,0 +1,26 @@
+[
+  {
+    "name": "turn_on_light",
+    "description": "Turn on or adjust lights in a specified room. Example: 'dim the living room light to 50%' -> room='living room', brightness=50",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "room": {"type": "string", "description": "Room name, e.g. 'living room', 'bedroom'"},
+        "brightness": {"type": "integer", "minimum": 0, "maximum": 100, "description": "Brightness 0-100. 0 = off"}
+      },
+      "required": ["room", "brightness"]
+    }
+  },
+  {
+    "name": "set_thermostat",
+    "description": "Set the thermostat temperature. Example: 'set AC to 26 degrees' -> temperature=26",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "temperature": {"type": "number", "description": "Target temperature in Celsius (°C)"},
+        "mode": {"type": "string", "enum": ["cool", "heat", "auto"], "description": "AC mode: cool (cooling), heat (heating), auto (automatic)"}
+      },
+      "required": ["temperature"]
+    }
+  }
+]
