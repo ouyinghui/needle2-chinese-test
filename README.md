@@ -92,9 +92,9 @@
 
 | 平台 | 内存 | GPU | 说明 |
 |------|------|-----|------|
-| Linux x86_64 | 28MB | 不需要 | x86_64 PC/服务器 |
-| Linux ARM64 | 28MB | 不需要 | 树莓派 3B+ |
-| macOS ARM64 | 28MB | 不需要 | Apple Silicon |
+| Linux x86_64 | 28MB | 不需要 | x86_64 PC/服务器 ✅ |
+| Linux ARM64 | 28MB | 不需要 | 树莓派 3B+ ❌ (SIGILL) |
+| macOS ARM64 | 28MB | 不需要 | Apple Silicon ✅ |
 
 ### 验证步骤
 
